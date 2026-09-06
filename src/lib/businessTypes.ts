@@ -1,0 +1,542 @@
+export const BUSINESS_TYPES: Record<string, string[]> = {
+  hospital: [
+    "hospital", "medical center", "clinic", "healthcare center", "nursing home",
+    "polyclinic", "diagnostic center", "multi specialty hospital",
+    "super specialty hospital", "general hospital", "children hospital",
+    "eye hospital", "heart hospital", "cancer hospital", "maternity hospital",
+    "orthopedic hospital", "neuro hospital", "cancer care", "trauma center",
+    "emergency hospital", "day care center", "rehabilitation center",
+    "psychiatric hospital", "homeopathy hospital", "ayurvedic hospital",
+    "unani hospital", "naturopathy hospital", "dialysis center",
+    "blood bank", "pathology lab", "radiology center", "imaging center",
+    "fertility clinic", "IVF center", "dental hospital", "ENT hospital",
+    "skin hospital", "儿科 hospital", "surgical center",
+  ],
+  restaurant: [
+    "restaurant", "food", "dining", "eatery", "food court",
+    "veg restaurant", "non veg restaurant", "multi cuisine restaurant",
+    "fine dining", "fast food", "biryani restaurant", "Chinese restaurant",
+    "South Indian restaurant", "North Indian restaurant", "Italian restaurant",
+    "Mexican restaurant", "Thai restaurant", "Japanese restaurant",
+    "Korean restaurant", "Mughlai restaurant", "Hyderabadi restaurant",
+    "Andhra restaurant", "Tamil restaurant", "Kerala restaurant",
+    "Bengali restaurant", "Punjabi restaurant", "Rajasthani restaurant",
+    "Gujarati restaurant", "Marathi restaurant", "Coastal restaurant",
+    "Seafood restaurant", "BBQ restaurant", "grill restaurant",
+    "tandoor restaurant", "dhaba", "family restaurant",
+    "rooftop restaurant", "buffet restaurant", "cafe restaurant",
+    "bar and restaurant", "lounge", "pub", "bar", "酒吧",
+    "takeaway", "delivery", "cloud kitchen", "ghost kitchen",
+  ],
+  restaurants: [
+    "restaurant", "food", "dining", "eatery", "food court",
+    "veg restaurant", "non veg restaurant", "multi cuisine restaurant",
+    "fine dining", "fast food", "biryani restaurant",
+  ],
+  school: [
+    "school", "college", "academy", "education", "public school",
+    "CBSE school", "ICSE school", "international school", "convent school",
+    "government school", "private school", "boarding school",
+    "day school", "nursery school", "primary school", "secondary school",
+    "high school", "higher secondary school", "pre school",
+    "kindergarten", "montessori school", "play school",
+    "special school", "deaf school", "blind school",
+    "engineering college", "medical college", "arts college",
+    "science college", "commerce college", "law college",
+    "management college", "nursing college", "pharmacy college",
+    "b.Ed college", "teacher training college", "polytechnic",
+    "ITI", "diploma college", "distance education",
+  ],
+  gym: [
+    "gym", "fitness center", "health club", "yoga studio",
+    "crossfit", "body building gym", "ladies gym", "unisex gym",
+    "personal training gym", "zumba studio", "aerobics center",
+    "pilates studio", "martial arts academy", "karate school",
+    "taekwondo academy", "boxing gym", "mma gym",
+    "swimming pool", "tennis court", "badminton court",
+    "cricket academy", "football academy", "sports academy",
+    "dance academy", "dance studio",
+  ],
+  pharmacy: [
+    "pharmacy", "drugstore", "medical store", "chemist",
+    "apollo pharmacy", "medplus", "24 hour pharmacy",
+    "online pharmacy", "generic pharmacy", "ayurvedic pharmacy",
+    "homeopathy store", "veterinary pharmacy", "hospital pharmacy",
+    "retail pharmacy", "wholesale pharmacy",
+  ],
+  dentist: [
+    "dentist", "dental clinic", "dental care", "dental hospital",
+    "orthodontist", "periodontist", "endodontist", "prosthodontist",
+    "oral surgeon", "pediatric dentist", "cosmetic dentist",
+    "dental implant center", "teeth whitening", "root canal specialist",
+    "dental lab", "dental supplies",
+  ],
+  lawyer: [
+    "lawyer", "attorney", "law firm", "legal services", "advocate",
+    "chamber of advocate", "legal consultant", "notary public",
+    "arbitrator", "mediator", "corporate lawyer", "criminal lawyer",
+    "civil lawyer", "family lawyer", "divorce lawyer",
+    "property lawyer", "labor lawyer", "tax lawyer",
+    "immigration lawyer", "intellectual property lawyer",
+    "human rights lawyer", "environmental lawyer",
+  ],
+  real_estate_agency: [
+    "real estate", "property dealer", "realty", "property consultant",
+    "property builder", "real estate developer", "housing society",
+    "property management", "real estate agent", "broker",
+    "land developer", "apartment builder", "villa builder",
+    "commercial property", "residential property",
+  ],
+  car_repair: [
+    "car repair", "auto repair", "garage", "mechanic", "car service center",
+    "car wash", "car detailing", "car painting", "body shop",
+    "tire shop", "battery shop", "spare parts", "auto parts",
+    "car accessories", "car showroom", "used car dealer",
+    "car rental", "car leasing", "towing service",
+    "roadside assistance", "AC repair car", "denting painting",
+  ],
+  beauty_salon: [
+    "beauty salon", "salon", "spa", "hair salon", "beauty parlor",
+    "unisex salon", "ladies salon", "gents salon",
+    "facial salon", "bridal makeup", "mehendi artist",
+    "nail salon", "nail art", "waxing salon",
+    "skin care clinic", "dermatology clinic", "laser treatment",
+    "hair transplant", "hair removal", "tattoo parlor",
+    "body massage", "ayurvedic massage", "Thai massage",
+    " aromatherapy", "steam bath", "sauna",
+  ],
+  accounting: [
+    "accounting", "CA", "chartered accountant", "tax consultant", "CA firm",
+    "auditor", "cost accountant", "company secretary",
+    "tax filing", "GST consultant", "income tax consultant",
+    "financial advisor", "wealth manager", "investment advisor",
+    "mutual fund distributor", "insurance advisor",
+    "bookkeeping", "payroll service",
+  ],
+  insurance_agency: [
+    "insurance", "insurance agent", "insurance company",
+    "life insurance", "health insurance", "car insurance",
+    "bike insurance", "travel insurance", "home insurance",
+    "business insurance", "crop insurance",
+  ],
+  travel_agency: [
+    "travel agency", "tour operator", "tour travel", "travel agent",
+    "holiday package", "flight booking", "hotel booking",
+    "bus booking", "train booking", "visa service",
+    "passport service", "foreign exchange",
+    "adventure travel", "pilgrimage tour", "honeymoon package",
+    "corporate travel", "group tour",
+  ],
+  pet_store: [
+    "pet shop", "pet store", "pet care", "pet clinic",
+    "pet grooming", "pet boarding", "pet training",
+    "aquarium shop", "bird shop", "pet food store",
+    "veterinary clinic", "animal hospital",
+  ],
+  bakery: [
+    "bakery", "cake shop", "pastry shop", "bakery and cafe",
+    "bread factory", "cookie shop", "chocolate shop",
+    "wedding cake", "custom cake", "bakeshop",
+    "confectionery", "sweet shop", "mithai shop",
+  ],
+  grocery_store: [
+    "grocery store", "supermarket", "kirana store", "grocery shop",
+    "provision store", "general store", "department store",
+    "hypermarket", "wholesale store", "wholesale market",
+    "farm fresh", "organic store", "vegetable shop",
+    "fruit shop", "meat shop", "fish market",
+    "rice shop", "flour mill", "spice shop",
+  ],
+  clothing_store: [
+    "clothing store", "garment shop", "fashion store", "readymade shop",
+    "mens wear", "womens wear", "kids wear", "ethnic wear",
+    "western wear", "saree shop", "silk store",
+    "shirt shop", "jeans store", "shoe store",
+    "footwear shop", "sandal shop", "slipper shop",
+    "uniform shop", "school uniform", "office wear",
+    "bridal wear", "groom wear", "boutique",
+    "designer store", "tailor shop", "alteration shop",
+  ],
+  electronics_store: [
+    "electronics store", "mobile shop", "gadget store", "electronics showroom",
+    "mobile showroom", "laptop store", "computer shop",
+    "TV store", "AC store", "refrigerator store",
+    "washing machine store", "home appliance store",
+    "camera store", "gaming store", "smart watch store",
+    "headphone store", "speaker store", "power bank store",
+    "charger store", "cable store", "accessories shop",
+    "refurbished electronics", "second hand electronics",
+  ],
+  furniture_store: [
+    "furniture store", "furniture shop", "furniture showroom",
+    "home furnishing", "bed shop", "sofa shop",
+    "table shop", "chair shop", "wardrobe shop",
+    "kitchen furniture", "office furniture", "school furniture",
+    "hotel furniture", "hospital furniture",
+    "wooden furniture", "steel furniture", "plastic furniture",
+    "imported furniture", "antique furniture",
+    "interior designer", "modular kitchen",
+  ],
+  florist: [
+    "florist", "flower shop", "flower bouquet", "wedding decoration",
+    "event decoration", "party decoration", "balloon decoration",
+    "gift shop", "gift card store", "greeting card shop",
+    "chocolate gift", "flower delivery",
+  ],
+  coffee: [
+    "cafe", "coffee shop", "coffee house", "coffee day",
+    "starbucks", "cafe coffee day", "blue tokai",
+    "tea shop", "chai point", "chai stall",
+    "juice shop", "smoothie bar", "milkshake shop",
+  ],
+  cafe: [
+    "cafe", "coffee shop", "coffeeshop", "tea cafe",
+    "hookah cafe", "gaming cafe", "internet cafe",
+    "book cafe", "study cafe", "laptop cafe",
+  ],
+  hotel: [
+    "hotel", "lodging", "guest house", "resort", "inn",
+    "budget hotel", "luxury hotel", "business hotel",
+    "heritage hotel", "boutique hotel", "beach resort",
+    "hill resort", "wildlife resort", "farm house",
+    "homestay", "hostel", "dormitory", "paying guest",
+    "service apartment", "vacation rental", "airbnb",
+  ],
+  bank: [
+    "bank", "ATM", "financial services", "SBI", "HDFC bank",
+    "ICICI bank", "Axis bank", "Kotak bank", "Yes bank",
+    "PNB bank", "Bank of Baroda", "Canara bank",
+    "Union bank", "Indian bank", "IDBI bank",
+    "post office", "post bank", "India Post",
+    "microfinance", "NBFC", "cooperative bank",
+  ],
+  supermarket: [
+    "supermarket", "grocery", "mart", "hypermarket",
+    "big bazaar", "dmart", "reliance fresh",
+    "more supermarket", " Spencer's", "food bazaar",
+    "wholesale market", "mandi", "sabzi mandi",
+  ],
+};
+
+export const INDIAN_STATES: Record<string, string[]> = {
+  "Andhra Pradesh": [
+    "Anantapur", "Chittoor", "East Godavari", "Guntur", "Krishna",
+    "Kurnool", "Nellore", "Prakasam", "Srikakulam", "Visakhapatnam",
+    "Vizianagaram", "West Godavari", "YSR Kadapa",
+    "Araku", "Bobbili", "Chilakaluripeta", "Gudivada", "Hindupur",
+    "Kadapa", "Kakinada", "Machilipatnam", "Narasaraopet",
+    "Ongole", "Palasa", "Parvathipuram", "Proddatur", "Rajahmundry",
+    "Srikakulam", "Tadepalligudem", "Tirupati", "Vijayawada",
+    "Visakhapatnam City", "Vizianagaram Town",
+  ],
+  "Arunachal Pradesh": [
+    "Tawang", "West Kameng", "East Kameng", "Papum Pare", "Kurung Kumey",
+    "Kra Daadi", "Upper Subansiri", "Lower Subansiri", "West Siang",
+    "East Siang", "Siang", "Upper Siang", "Lower Dibang Valley",
+    "Dibang Valley", "Anjaw", "Lohit", "Namsai", "Changlang",
+    "Tirap", "Longding",
+  ],
+  "Assam": [
+    "Kamrup", "Kamrup Metropolitan", "Barpeta", "Bongaigaon", "Cachar",
+    "Darrang", "Dhemaji", "Dhubri", "Dima Hasao", "Goalpara",
+    "Golaghat", "Hailakandi", "Jorhat", "Karbi Anglong", "Karimganj",
+    "Kokrajhar", "Lakhimpur", "Morigaon", "Nagaon", "Nalbari",
+    "Sivasagar", "Sonitpur", "Tinsukia", "Udalguri", "Baksa",
+    "Chirang", "Kamrup", "Majuli", "South Salmara-Mankachar",
+  ],
+  "Bihar": [
+    "Araria", "Aurangabad", "Banka", "Begusarai", "Bhagalpur",
+    "Bhojpur", "Buxar", "Darbhanga", "Gaya", "Gopalganj",
+    "Jamui", "Jehanabad", "Kaimur", "Katihar", "Khagaria",
+    "Kishanganj", "Lakhisarai", "Madhepura", "Madhubani", "Munger",
+    "Muzaffarpur", "Nalanda", "Nawada", "Patna", "Purnia",
+    "Rohtas", "Saharsa", "Samastipur", "Saran", "Sheikhpura",
+    "Sheohar", "Sitamarhi", "Siwan", "Supaul", "Vaishali",
+    "West Champaran", "East Champaran",
+  ],
+  "Chhattisgarh": [
+    "Balod", "Baloda Bazar", "Bastar", "Bemetara", "Bijapur",
+    "Bilaspur", "Dantewada", "Dhamtari", "Durg", "Gariaband",
+    "Janjgir-Champa", "Jashpur", "Kabirdham", "Kanker", "Kondagaon",
+    "Korba", "Koraput", "Mahasamund", "Mungeli", "Narayanpur",
+    "Raigarh", "Raipur", "Rajnandgaon", "Sukma", "Surajpur",
+    "Surguja", "Kawardha", "Pandaria",
+  ],
+  "Goa": [
+    "North Goa", "South Goa", "Panaji", "Margao", "Vasco da Gama",
+    "Mapusa", "Ponda", "Calangute", "Candolim", "Baga",
+    "Anjuna", "Colva", "Palolem", "Arambol", "Sinquerim",
+  ],
+  "Gujarat": [
+    "Ahmedabad", "Amreli", "Anand", "Aravalli", "Banaskantha",
+    "Bharuch", "Bhavnagar", "Botad", "Chhota Udaipur", "Dahod",
+    "Dang", "Devbhoomi Dwarka", "Gandhinagar", "Gir Somnath",
+    "Jamnagar", "Junagadh", "Kheda", "Kutch", "Mahisagar",
+    "Mehsana", "Morbi", "Narmada", "Navsari", "Panchmahal",
+    "Patan", "Porbandar", "Rajkot", "Sabarkantha", "Surat",
+    "Surendranagar", "Tapi", "Vadodara", "Valsad",
+  ],
+  "Haryana": [
+    "Ambala", "Bhiwani", "Charkhi Dadri", "Faridabad", "Fatehabad",
+    "Gurugram", "Hisar", "Jhajjar", "Jind", "Kaithal",
+    "Karnal", "Kurukshetra", "Mahendragarh", "Nuh", "Palwal",
+    "Panchkula", "Panipat", "Rewari", "Rohtak", "Sirsa",
+    "Sonipat", "Yamunanagar",
+  ],
+  "Himachal Pradesh": [
+    "Bilaspur", "Chamba", "Hamirpur", "Kangra", "Kinnaur",
+    "Kullu", "Lahaul and Spiti", "Mandi", "Shimla", "Sirmaur",
+    "Solan", "Una",
+  ],
+  "Jharkhand": [
+    "Bokaro", "Chatra", "Deoghar", "Dhanbad", "Dumka",
+    "East Singhbhum", "Garhwa", "Giridih", "Godda", "Gumla",
+    "Hazaribagh", "Jamtara", "Khunti", "Koderma", "Latehar",
+    "Lohardaga", "Pakur", "Palamu", "Ramgarh", "Ranchi",
+    "Sahebganj", "Seraikela-Kharsawan", "Simdega", "West Singhbhum",
+  ],
+  "Karnataka": [
+    "Bagalkot", "Ballari", "Belagavi", "Bengaluru Rural",
+    "Bengaluru Urban", "Bidar", "Chamarajanagar", "Chikkaballapur",
+    "Chikkamagaluru", "Chitradurga", "Dakshina Kannada", "Davangere",
+    "Dharwad", "Gadag", "Hassan", "Haveri", "Kalaburagi",
+    "Kodagu", "Kolar", "Koppal", "Mandya", "Mysuru",
+    "Raichur", "Ramanagara", "Shivamogga", "Tumakuru",
+    "Udupi", "Uttara Kannada", "Vijayapura", "Yadgir",
+  ],
+  "Kerala": [
+    "Alappuzha", "Ernakulam", "Idukki", "Kannur", "Kasaragod",
+    "Kollam", "Kottayam", "Kozhikode", "Malappuram", "Palakkad",
+    "Pathanamthitta", "Thiruvananthapuram", "Thrissur", "Wayanad",
+  ],
+  "Madhya Pradesh": [
+    "Agar Malwa", "Alirajpur", "Anuppur", "Ashoknagar", "Balaghat",
+    "Barwani", "Betul", "Bhind", "Bhopal", "Burhanpur",
+    "Chhatarpur", "Chhindwara", "Damoh", "Datia", "Dewas",
+    "Dhar", "Dindori", "Guna", "Gwalior", "Harda",
+    "Hoshangabad", "Indore", "Jabalpur", "Jhabua", "Katni",
+    "Khandwa", "Khargone", "Mandla", "Mandsaur", "Morena",
+    "Narsinghpur", "Neemuch", "Panna", "Raisen", "Rajgarh",
+    "Ratlam", "Rewa", "Sagar", "Satna", "Sehore",
+    "Seoni", "Shahdol", "Shajapur", "Shivpuri", "Sidhi",
+    "Singrauli", "Tikamgarh", "Ujjain", "Umaria", "Vidisha",
+  ],
+  "Maharashtra": [
+    "Ahmednagar", "Akola", "Amravati", "Aurangabad", "Beed",
+    "Bhandara", "Buldhana", "Chandrapur", "Dhule", "Gadchiroli",
+    "Gondia", "Hingoli", "Jalgaon", "Jalna", "Kolhapur",
+    "Latur", "Mumbai City", "Mumbai Suburban", "Nagpur", "Nanded",
+    "Nandurbar", "Nashik", "Osmanabad", "Palghar", "Parbhani",
+    "Pune", "Raigad", "Ratnagiri", "Sangli", "Satara",
+    "Sindhudurg", "Solapur", "Thane", "Wardha", "Washim",
+    "Yavatmal",
+  ],
+  "Manipur": [
+    "Bishnupur", "Chandel", "Churachandpur", "Imphal East", "Imphal West",
+    "Jiribam", "Kakching", "Kamjong", "Kangpokpi", "Noney",
+    "Pherzawl", "Senapati", "Tamenglong", "Tengnoupal", "Thoubal",
+    "Ukhrul",
+  ],
+  "Meghalaya": [
+    "East Garo Hills", "East Jaintia Hills", "East Khasi Hills",
+    "North Garo Hills", "Ri Bhoi", "South Garo Hills",
+    "South West Garo Hills", "South West Khasi Hills",
+    "West Garo Hills", "West Jaintia Hills", "West Khasi Hills",
+  ],
+  "Mizoram": [
+    "Aizawl", "Champhai", "Hnahthial", "Khawzawl", "Kolasib",
+    "Lawngtlai", "Lunglei", "Mamit", "Saitual", "Serchhip",
+  ],
+  "Nagaland": [
+    "Dimapur", "Kiphire", "Longleng", "Mokokchung", "Mon",
+    "Noklak", "Peren", "Phek", "Tuensang", "Wokha",
+    "Zunheboto",
+  ],
+  "Odisha": [
+    "Angul", "Balangir", "Balasore", "Bargarh", "Bhadrak",
+    "Boudh", "Cuttack", "Debagarh", "Dhenkanal", "Gajapati",
+    "Ganjam", "Jagatsinghpur", "Jajpur", "Jharsuguda", "Jungle Mahal",
+    "Kandhamal", "Kendrapara", "Kendujhar", "Khordha", "Koraput",
+    "Malkangiri", "Mayurbhanj", "Nabarangpur", "Nayagarh", "Nuapada",
+    "Puri", "Rayagada", "Sambalpur", "Sonepur", "Sundergarh",
+  ],
+  "Punjab": [
+    "Amritsar", "Barnala", "Bathinda", "Faridkot", "Fatehgarh Sahib",
+    "Fazilka", "Ferozepur", "Hoshiarpur", "Jalandhar", "Kapurthala",
+    "Ludhiana", "Moga", "Muktsar", "Nawanshahr", "Pathankot",
+    "Patiala", "Rupnagar", "Sangrur", "SAS Nagar", "Tarn Taran",
+  ],
+  "Rajasthan": [
+    "Ajmer", "Alwar", "Banswara", "Baran", "Barmer",
+    "Bharatpur", "Bhilwara", "Bikaner", "Bundi", "Chittorgarh",
+    "Churu", "Dausa", "Dholpur", "Dungarpur", "Hanumangarh",
+    "Jaipur", "Jaisalmer", "Jalore", "Jhalawar", "Jhunjhunu",
+    "Jodhpur", "Karauli", "Kota", "Nagaur", "Pali",
+    "Pratapgarh", "Rajsamand", "Sawai Madhopur", "Sikar", "Sirohi",
+    "Sri Ganganagar", "Tonk", "Udaipur",
+  ],
+  "Sikkim": [
+    "East Sikkim", "North Sikkim", "South Sikkim", "West Sikkim",
+    "Gangkalung", "Gangtok", "Namchi", "Gyalshing", "Mangan",
+  ],
+  "Tamil Nadu": [
+    "Ariyalur", "Chengalpattu", "Chennai", "Coimbatore", "Cuddalore",
+    "Dharmapuri", "Dindigul", "Erode", "Kallakurichi", "Kancheepuram",
+    "Karur", "Krishnagiri", "Madurai", "Mayiladuthurai", "Nagapattinam",
+    "Namakkal", "Nilgiris", "Perambalur", "Pudukkottai", "Ramanathapuram",
+    "Ranipet", "Salem", "Sivaganga", "Tenkasi", "Thanjavur",
+    "Theni", "Thoothukudi", "Tiruchirappalli", "Tirunelveli",
+    "Tirupattur", "Tiruppur", "Tiruvallur", "Tiruvannamalai",
+    "Tiruvarur", "Vellore", "Viluppuram", "Virudhunagar",
+  ],
+  "Telangana": [
+    "Adilabad", "Bhadradri Kothagudem", "Hyderabad", "Jagtial",
+    "Jangaon", "Jayashankar Bhupalpally", "Jogulamba Gadwal",
+    "Kamareddy", "Karimnagar", "Khammam", "Komaram Bheem",
+    "Mahabubabad", "Mahabubnagar", "Mancherial", "Medak",
+    "Medchal-Malkajgiri", "Mulugu", "Nagarkurnool", "Nalgonda",
+    "Narayanpet", "Nirmal", "Nizamabad", "Peddapalli",
+    "Rajanna Sircilla", "Ranga Reddy", "Sangareddy", "Siddipet",
+    "Suryapet", "Vikarabad", "Wanaparthy", "Warangal Rural",
+    "Warangal Urban", "Yadadri Bhuvanagiri",
+  ],
+  "Tripura": [
+    "Dhalai", "Gomati", "Khowai", "North Tripura", "Sepahijala",
+    "South Tripura", "Unakoti", "West Tripura",
+  ],
+  "Uttar Pradesh": [
+    "Agra", "Aligarh", "Ambedkar Nagar", "Amethi", "Amroha",
+    "Auraiya", "Azamgarh", "Baghpat", "Bahraich", "Ballia",
+    "Balrampur", "Banda", "Barabanki", "Bareilly", "Basti",
+    "Bijnor", "Budaun", "Bulandshahr", "Chandauli", "Chitrakoot",
+    "Deoria", "Etah", "Etawah", "Faizabad", "Farrukhabad",
+    "Fatehpur", "Firozabad", "Gautam Buddh Nagar", "Ghaziabad",
+    "Ghazipur", "Gonda", "Gorakhpur", "Hamirpur", "Hapur",
+    "Hardoi", "Hathras", "Jalaun", "Jaunpur", "Jhansi",
+    "Kannauj", "Kanpur Dehat", "Kanpur Nagar", "Kasganj",
+    "Kaushambi", "Kushinagar", "Lakhimpur Kheri", "Lucknow",
+    "Maharajganj", "Mahoba", "Mainpuri", "Mathura", "Mau",
+    "Meerut", "Mirzapur", "Moradabad", "Muzaffarnagar",
+    "Pratapgarh", "Prayagraj", "Raebareli", "Rampur", "Saharanpur",
+    "Sambhal", "Sant Kabir Nagar", "Shahjahanpur", "Shamli",
+    "Shravasti", "Siddharthnagar", "Sitapur", "Sonbhadra",
+    "Sultanpur", "Unnao", "Varanasi",
+  ],
+  "Uttarakhand": [
+    "Almora", "Bageshwar", "Chamoli", "Champawat", "Dehradun",
+    "Haridwar", "Nainital", "Pauri Garhwal", "Pithoragarh",
+    "Rudraprayag", "Tehri Garhwal", "Udham Singh Nagar",
+    "Uttarkashi",
+  ],
+  "West Bengal": [
+    "Alipurduar", "Bankura", "Birbhum", "Burdwan", "Cooch Behar",
+    "Darjeeling", "East Midnapore", "Hooghly", "Howrah", "Jalpaiguri",
+    "Jhargram", "Kalimpong", "Kolkata", "Malda", "Murshidabad",
+    "Nadia", "North 24 Parganas", "North Dinajpur", "Paschim Medinipur",
+    "Purba Medinipur", "Purulia", "South 24 Parganas",
+    "South Dinajpur", "West Midnapore",
+  ],
+};
+
+export const INDIAN_CITIES: Record<string, string[]> = {
+  "Visakhapatnam": [
+    "Visakhapatnam", "Vizag", "Dwaraka Nagar", "MVP Colony",
+    "Ram Nagar", "Seethammadhara", "RTC Complex", "Jagadamba",
+    "One Town", "Malkapuram", "Gajuwaka", "Anakapalle",
+    "Bheemili", "Padmanabham", "Pendurthi", "Gopalapatnam",
+    "Madhurawada", "Kanaka.puram", "Yendada", "Madhavadhara",
+    "Losar", "Akkayyapalem", "Srinagar", "Balaji Nagar",
+    "Markondapalem", "Simhachalam", "Tagarapuvalasa",
+  ],
+  "Hyderabad": [
+    "Hyderabad", "Secunderabad", "HITEC City", "Banjara Hills",
+    "Jubilee Hills", "Gachibowli", "Madhapur", "Kondapur",
+    "Kukatpally", "Miyapur", "Bachupally", "Nizampet",
+    "Ameerpet", "SR Nagar", "Erragadda", "Moosapet",
+    "Bharat Nagar", "Kukatpally", "Chandanagar", "Lingampally",
+    "Narsingi", "Manikonda", "Financial District", "Nanakramguda",
+    "Tolichowki", "Mehdipatnam", "Tarnaka", "Nacharam",
+    "Uppal", "Lalapet", "Warasiguda", "Chaderghat",
+    "Koti", "Abids", "Sultan Bazar", "Mozamjahi Market",
+  ],
+  "Chennai": [
+    "Chennai", "T. Nagar", "Adyar", "Anna Nagar", "Velachery",
+    "Tambaram", "Porur", "Sholinganallur", "Thiruvanmiyur",
+    "Mylapore", "Nungambakkam", "Kodambakkam", "Royapettah",
+    "Egmore", "Chetpet", "Anna Nagar West", "Koyambedu",
+    "Ambattur", "Avadi", "Padi", "Manali", "Tondiarpet",
+  ],
+  "Bangalore": [
+    "Bangalore", "Bengaluru", "Whitefield", "Koramangala",
+    "HSR Layout", "BTM Layout", "Jayanagar", "Indiranagar",
+    "Electronic City", "Sarjapur Road", "Marathahalli",
+    "Bellandur", "Outer Ring Road", "Hebbal", "Yelahanka",
+    "Jakkur", "Rajajinagar", "Basavanagudi", "JP Nagar",
+    "Banashankari", "Vijayanagar", "Malleshwaram",
+  ],
+  "Mumbai": [
+    "Mumbai", "Andheri", "Bandra", "Juhu", "Worli", "Lower Parel",
+    "Powai", "Borivali", "Malad", "Goregaon", "Jogeshwari",
+    "Vile Parle", "Santacruz", "Khar", "Dadar", "Matunga",
+    "Sion", "Kurla", "Ghatkopar", "Vikhroli", "Mulund",
+    "Thane", "Navi Mumbai", "Vashi", "Belapur", "Kharghar",
+  ],
+  "Delhi": [
+    "New Delhi", "Connaught Place", "Karol Bagh", "Lajpat Nagar",
+    "Saket", "Dwarka", "Rohini", "Pitampura", "Shalimar Bagh",
+    "Janakpuri", "Rajouri Garden", "Patparganj", "Mayur Vihar",
+    "Laxmi Nagar", "Nehru Place", "Kalkaji", "Greater Kailash",
+    "Defence Colony", "South Extension", "Vasant Kunj",
+    "Chanakyapuri", "Hauz Khas", "Green Park", "Malviya Nagar",
+  ],
+  "Pune": [
+    "Pune", "Hinjewadi", "Kharadi", "Wakad", "Baner", "Aundh",
+    "Sinhagad Road", "Kothrud", "Deccan", "Shivajinagar",
+    "Camp", "Koregaon Park", "Hadapsar", "Undri", "Mundhwa",
+    "Viman Nagar", "Yerwada", "Kalyani Nagar", "Chinchwad",
+    "Pimpri", "Nigdi", "Akurdi", "Bhosari",
+  ],
+  "Kolkata": [
+    "Kolkata", "Park Street", "Salt Lake", "Sector V", "New Town",
+    "EM Bypass", "Gariahat", "Ballygunge", "Alipore", "Bhowanipore",
+    "Shyambazar", "Dum Dum", "Belgharia", "Rajarhat",
+    "Lake Gardens", "Jodhpur Park", "Dhakuria",
+  ],
+};
+
+export function getLocationVariations(location: string): string[] {
+  const variations = [location];
+  const base = location.split(",")[0].trim();
+  if (base !== location) variations.push(base);
+
+  const lower = location.toLowerCase();
+  if (lower.includes("visakhapatnam") || lower.includes("vizag")) {
+    variations.push("Vizag", "Visakhapatnam");
+  } else if (lower.includes("bangalore") || lower.includes("bengaluru")) {
+    variations.push("Bangalore", "Bengaluru");
+  } else if (lower.includes("hyderabad")) {
+    variations.push("Hyderabad", "Secunderabad");
+  } else if (lower.includes("chennai")) {
+    variations.push("Chennai");
+  } else if (lower.includes("mumbai")) {
+    variations.push("Mumbai", "Bombay");
+  } else if (lower.includes("delhi")) {
+    variations.push("Delhi", "New Delhi");
+  } else if (lower.includes("kolkata")) {
+    variations.push("Kolkata", "Calcutta");
+  } else if (lower.includes("pune")) {
+    variations.push("Pune");
+  }
+
+  return [...new Set(variations)];
+}
+
+export function getSubAreas(state: string, city: string): string[] {
+  const areas: string[] = [city];
+
+  if (INDIAN_CITIES[city]) {
+    areas.push(...INDIAN_CITIES[city]);
+  }
+
+  return [...new Set(areas)];
+}
