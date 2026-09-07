@@ -1,6 +1,6 @@
 # Client Data Fetcher
 
-Search businesses by location and type, export to Excel with real-time data via SerpAPI.
+Search businesses by location and type, export to Excel with real-time Google Maps data.
 
 ## Features
 - Search hospitals, restaurants, schools, etc. by location
